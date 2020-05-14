@@ -14,8 +14,8 @@ import java.lang.reflect.Constructor;
  * @Author: tona.sun
  * @Date: 2020/05/12 11:05
  */
-public class MyTest {
-    public static void main(String[] args) throws Exception {
+ class MyTest {
+     public static void main(String[] args) throws Exception {
         Constructor<?>[] constructors = Class.forName("com.yang.chapter3.Singleton").getDeclaredConstructors();
         //设置构造函数为可进入的 不然privte不能创建对象
         constructors[0].setAccessible(true);
@@ -28,7 +28,7 @@ public class MyTest {
     }
 
     @Test
-    public void test1() throws Exception {
+     void test1() throws Exception {
         Singleton1 singleton1 = Singleton1.getInstance();
         System.out.println("singleton1---" + singleton1);
         File file = new File("D://a.txt");

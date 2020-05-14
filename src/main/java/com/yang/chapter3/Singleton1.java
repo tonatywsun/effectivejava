@@ -7,13 +7,13 @@ import java.io.Serializable;
  * @Author: tona.sun
  * @Date: 2020/05/12 11:33
  */
-public class Singleton1 implements Serializable {
+ class Singleton1 implements Serializable {
     private static Singleton1 SINGLETON;
 
     private Singleton1() {
     }
 
-    public static Singleton1 getInstance() {
+     static Singleton1 getInstance() {
         if (SINGLETON == null) {
             synchronized (Singleton1.class) {
                 if (SINGLETON == null) {

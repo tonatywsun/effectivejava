@@ -5,8 +5,8 @@ package com.yang.chapter13;
  * @Author: tona.sun
  * @Date: 2020/05/14 17:39
  */
-public class MyTest {
-    public static void main(String[] args) {
+ class MyTest {
+     public static void main(String[] args) {
         MyEntry[] entries = new MyEntry[]{new MyEntry(), new MyEntry(), new MyEntry()};
         System.out.println(entries);
         MyEntry[] clone = entries.clone();

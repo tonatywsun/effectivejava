@@ -7,8 +7,8 @@ import java.util.WeakHashMap;
  * @Author: tona.sun
  * @Date: 2020/05/12 15:04
  */
-public class MyTest {
-    public static void main(String[] args) {
+ class MyTest {
+     public static void main(String[] args) {
         WeakHashMap<String, String> map = new WeakHashMap<>();
         map.put("","");
     }

@@ -5,35 +5,35 @@ package com.yang.chapter13;
  * @Author: tona.sun
  * @Date: 2020/05/14 17:32
  */
-public class MyEntry implements Cloneable {
+ class MyEntry implements Cloneable {
     private /*final*/ MyEntry2 myEntry2;
 
-    public MyEntry() {
+     MyEntry() {
     }
 
-    public MyEntry(MyEntry2 myEntry2) {
+     MyEntry(MyEntry2 myEntry2) {
         this.myEntry2 = myEntry2;
     }
 
     /**
      * 拷贝构造器
      */
-    public MyEntry(MyEntry myEntry) {
+     MyEntry(MyEntry myEntry) {
         this.myEntry2 = myEntry.getMyEntry2();
     }
 
     /**
      * 拷贝工厂
      */
-    public static MyEntry newInstance(MyEntry myEntry) {
+     static MyEntry newInstance(MyEntry myEntry) {
         return new MyEntry(myEntry);
     }
 
-    public MyEntry2 getMyEntry2() {
+     MyEntry2 getMyEntry2() {
         return myEntry2;
     }
 
-    public void setMyEntry2(MyEntry2 myEntry2) {
+     void setMyEntry2(MyEntry2 myEntry2) {
         this.myEntry2 = myEntry2;
     }
 

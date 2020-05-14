@@ -11,8 +11,8 @@ import java.util.Set;
  * @Author: tona.sun
  * @Date: 2020/05/12 14:04
  */
-public class MyTest {
-    public static void main(String[] args) {
+ class MyTest {
+     public static void main(String[] args) {
         //"true".equalsIgnoreCase(s)?TURE:FALSE;
         Boolean.valueOf("true");
         Integer.valueOf("1");
@@ -24,7 +24,7 @@ public class MyTest {
     }
     //要优先使用基本类型而不是装箱基本类型，要当心无意识的自动装箱
     @Test
-    public void sum() {
+     void sum() {
         long l = System.currentTimeMillis();
         Long sum = 0L;
         //程序构造了大约Integer.MAX_VALUE个多余的Long实例(大约每次往Long sum中增加long时构造一个实例)。

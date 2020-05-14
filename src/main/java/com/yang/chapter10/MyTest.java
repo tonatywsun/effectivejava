@@ -7,9 +7,9 @@ import java.util.Objects;
  * @Author: tona.sun
  * @Date: 2020/05/13 16:15
  */
-public class MyTest {
+ class MyTest {
     @SuppressWarnings("all")
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Objects.equals(new MyTest(),null);
         //google autovalue框架测试 下面两行代码可以运行 但是看着不好看 先注释了
         //AutoValueTest a1=new AutoValue_AutoValueTest();

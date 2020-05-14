@@ -8,7 +8,7 @@ import com.google.auto.value.AutoValue;
  * @Date: 2020/05/13 16:35
  */
 @AutoValue
-public abstract class AutoValueTest {
+ abstract class AutoValueTest {
     private String e1;
     private String e2;
 }

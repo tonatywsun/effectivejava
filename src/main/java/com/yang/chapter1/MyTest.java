@@ -9,8 +9,8 @@ import java.util.Date;
  * @Author: tona.sun
  * @Date: 2020/05/09 15:06
  */
-public class MyTest {
-    public static void main(String[] args) {
+ class MyTest {
+     public static void main(String[] args) {
         Entry1 entry1 = Entry1.allAttrEntry();
         System.out.println(entry1);
         System.out.println(new Entry1("", "", "", "", "", ""));

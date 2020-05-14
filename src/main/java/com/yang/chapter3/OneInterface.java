@@ -5,6 +5,6 @@ package com.yang.chapter3;
  * @Author: tona.sun
  * @Date: 2020/05/12 11:28
  */
-public interface OneInterface {
-    public void method();
+ interface OneInterface {
+     void method();
 }
